@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxOffice.Tests.Functional", "FoxOffice.Tests.Functional\FoxOffice.Tests.Functional.csproj", "{FB296AAB-83D2-4246-B2C0-DFC66BB89B79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB296AAB-83D2-4246-B2C0-DFC66BB89B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB296AAB-83D2-4246-B2C0-DFC66BB89B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB296AAB-83D2-4246-B2C0-DFC66BB89B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB296AAB-83D2-4246-B2C0-DFC66BB89B79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5ED5EFC-1BE3-49CA-8B99-C4EBFB2B8A7F}
+	EndGlobalSection
+EndGlobal

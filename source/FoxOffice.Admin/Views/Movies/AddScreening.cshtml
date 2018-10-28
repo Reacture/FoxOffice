@@ -1,0 +1,51 @@
+﻿@model AddScreeningViewModel
+
+@{
+    ViewData["Title"] = "Add Screening";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Screening</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddScreening">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MovieId" />
+            <div class="form-group">
+                <label asp-for="TheaterId" class="control-label"></label>
+                <select asp-for="TheaterId" asp-items="Model.Theaters">
+                    <option value="">Please select a theater...</option>
+                </select>
+                <span asp-validation-for="TheaterId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScreeningTime" class="control-label"></label>
+                <input asp-for="ScreeningTime" class="form-control" />
+                <span asp-validation-for="ScreeningTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DefaultFee" class="control-label"></label>
+                <input asp-for="DefaultFee" class="form-control" />
+                <span asp-validation-for="DefaultFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChildrenFee" class="control-label"></label>
+                <input asp-for="ChildrenFee" class="form-control" />
+                <span asp-validation-for="ChildrenFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

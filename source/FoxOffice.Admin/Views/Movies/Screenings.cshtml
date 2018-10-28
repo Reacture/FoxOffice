@@ -1,0 +1,54 @@
+﻿@model ScreeningsViewModel
+
+@{
+    ViewData["Title"] = "Screenings";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    @{
+        var routeData = new Dictionary<string, string>
+        {
+            ["movieId"] = $"{Model.MovieId}",
+        };
+    }
+    <a asp-action="AddScreening" asp-all-route-data="routeData">Add Screening</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Screenings[0].TheaterName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Screenings[0].ScreeningTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Screenings[0].DefaultFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Screenings[0].ChildrenFee)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var screening in Model.Screenings)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => screening.TheaterName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => screening.ScreeningTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => screening.DefaultFee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => screening.ChildrenFee)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

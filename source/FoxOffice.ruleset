@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="FoxOffice Rule Set" Description="" ToolsVersion="15.0">
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+    <Rule Id="SA1600" Action="None" />
+    <Rule Id="SA1633" Action="None" />
+    <Rule Id="SA0001" Action="None" />
+    <Rule Id="SA1309" Action="None" />
+    <Rule Id="SA1101" Action="None" />
+    <Rule Id="SA1202" Action="None" />
+    <Rule Id="SA1133" Action="None" />
+    <Rule Id="SA1204" Action="None" />
+  </Rules>
+</RuleSet>

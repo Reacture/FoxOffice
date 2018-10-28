@@ -1,0 +1,7 @@
+# Visual Studio
+.vs
+bin
+obj
+
+# Azure Functions
+local.settings.json
