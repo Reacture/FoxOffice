@@ -4,6 +4,8 @@
 
 This sample program shows how to build a distributed cloud .NET Core application based on CQRS and Event Sourcing.
 
+![Apps](./contents/apps.png)
+
 ## Architecture
 
 ![Architecture](./contents/architecture.png)
