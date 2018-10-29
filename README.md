@@ -2,4 +2,4 @@
 
 CQRS Sample Application
 
-![Architecture](./doc/images/architecture.png)
+![Architecture](./contents/architecture.png)
