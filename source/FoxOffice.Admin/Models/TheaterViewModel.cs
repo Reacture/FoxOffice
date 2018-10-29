@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Collections.Immutable;
+    using System.ComponentModel.DataAnnotations;
     using System.Linq;
     using FoxOffice.ReadModel;
 
@@ -12,10 +13,13 @@
 
         public string Name { get; set; }
 
+        [Display(Name = "Seat Rows")]
         public int SeatRowCount { get; set; }
 
+        [Display(Name = "Seat Columns")]
         public int SeatColumnCount { get; set; }
 
+        [Display(Name = "Created Time")]
         public DateTime CreatedAt { get; set; }
 
         internal static TheaterViewModel Translate(TheaterDto source)

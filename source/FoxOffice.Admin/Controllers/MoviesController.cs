@@ -56,11 +56,7 @@
             [FromServices] IFindMovieService service, [FromRoute] Guid movieId)
         {
             MovieDto movie = await service.FindMovie(movieId);
-            return View(new ScreeningsViewModel
-            {
-                MovieId = movieId,
-                Screenings = ScreeningViewModel.Translate(movie.Screenings),
-            });
+            return View(ScreeningsViewModel.Translate(movie));
         }
 
         [HttpGet("AddScreening/{movieId}")]

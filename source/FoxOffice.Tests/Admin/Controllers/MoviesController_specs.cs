@@ -199,7 +199,9 @@
             actual.Should().BeEquivalentTo(new
             {
                 MovieId = movie.Id,
-                Screenings = ScreeningViewModel.Translate(movie.Screenings),
+                MovieTitle = movie.Title,
+                Screenings = from s in movie.Screenings
+                             select ScreeningViewModel.Translate(s),
             });
         }
 

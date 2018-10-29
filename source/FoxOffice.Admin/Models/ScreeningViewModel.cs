@@ -41,7 +41,7 @@
             };
         }
 
-        public static ImmutableArray<ScreeningViewModel> Translate(
+        internal static ImmutableArray<ScreeningViewModel> Translate(
             IEnumerable<ScreeningDto> source)
         {
             return ImmutableArray.CreateRange(source.Select(Translate));
